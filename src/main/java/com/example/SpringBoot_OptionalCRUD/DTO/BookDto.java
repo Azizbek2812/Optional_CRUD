@@ -3,6 +3,10 @@ package com.example.SpringBoot_OptionalCRUD.DTO;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+
 @Builder
 public record BookDto (
     @NotBlank(message = "Title cannot be empty")
@@ -16,4 +20,5 @@ public record BookDto (
     @NotNull(message = "Price cannot be null")
     Double price
 )
-{}
+{
+}
